@@ -6,6 +6,7 @@ import { canLateChange, consumeGraceToken, LATE_MIN } from "./utils/grace";
 /* ---------- small helpers / UI atoms ---------- */
 const fmt = (iso) =>
   new Date(iso).toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" });
+// test deploy
 
 const trafficColor = (lvl) =>
   lvl === "HIGH" ? "bg-red-600" : lvl === "MEDIUM" ? "bg-amber-500" : "bg-green-600";
