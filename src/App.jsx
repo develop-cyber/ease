@@ -779,7 +779,7 @@ export default function App() {
                   )}
                 </div>
 
-                <Section title="On-time (parent)">
+                <Section title="On-time ">
                   <OfferCard
                     offer={offers.parent}
                     isBest={bestWorst.bestId === offers.parent.id}
@@ -790,7 +790,7 @@ export default function App() {
 
                 {form.flex.on && (
                   <div className="grid lg:grid-cols-2 gap-6 w-full">
-                    <Section title="Earlier (children)">
+                    <Section title="Earlier ">
                       <div className="grid gap-3">
                         {offers.earlier.length === 0 && (
                           <div className="text-sm text-slate-900">No earlier headroom.</div>
@@ -806,7 +806,7 @@ export default function App() {
                         ))}
                       </div>
                     </Section>
-                    <Section title="Later (children)">
+                    <Section title="Later">
                       <div className="grid gap-3">
                         {offers.later.length === 0 && (
                           <div className="text-sm text-slate-900">No later headroom.</div>
