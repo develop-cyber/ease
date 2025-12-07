@@ -1,0 +1,58 @@
+{
+  "traffic": { "level": "HIGH", "density": 0.82, "reasoning": "rush-hour mock" },
+  "laneAdvice": "LEFT/LONG",
+  "parent": {
+    "id": "mock-parent",
+    "windowStart": "2025-12-03T08:22:00.000Z",
+    "windowEnd": "2025-12-03T08:37:00.000Z",
+    "reliability": 0.61,
+    "headroom": 0.32,
+    "laneFamily": "LEFT/LONG",
+    "shift": { "direction": "ONTIME", "minutes": 0 },
+    "incentives": { "credits": 0 }
+  },
+  "earlier": [
+    {
+      "id": "mock-e15",
+      "windowStart": "2025-12-03T08:07:00.000Z",
+      "windowEnd": "2025-12-03T08:22:00.000Z",
+      "reliability": 0.72,
+      "headroom": 0.48,
+      "laneFamily": "LEFT/LONG",
+      "shift": { "direction": "EARLY", "minutes": -15 },
+      "incentives": { "credits": 1 }
+    },
+    {
+      "id": "mock-e30",
+      "windowStart": "2025-12-03T07:52:00.000Z",
+      "windowEnd": "2025-12-03T08:07:00.000Z",
+      "reliability": 0.78,
+      "headroom": 0.58,
+      "laneFamily": "LEFT/LONG",
+      "shift": { "direction": "EARLY", "minutes": -30 },
+      "incentives": { "credits": 2 }
+    }
+  ],
+  "later": [
+    {
+      "id": "mock-l15",
+      "windowStart": "2025-12-03T08:37:00.000Z",
+      "windowEnd": "2025-12-03T08:52:00.000Z",
+      "reliability": 0.59,
+      "headroom": 0.28,
+      "laneFamily": "LEFT/LONG",
+      "shift": { "direction": "LATE", "minutes": 15 },
+      "incentives": { "credits": 0 }
+    },
+    {
+      "id": "mock-l30",
+      "windowStart": "2025-12-03T08:52:00.000Z",
+      "windowEnd": "2025-12-03T09:07:00.000Z",
+      "reliability": 0.57,
+      "headroom": 0.22,
+      "laneFamily": "LEFT/LONG",
+      "shift": { "direction": "LATE", "minutes": 30 },
+      "incentives": { "credits": 0 }
+    }
+  ]
+}
